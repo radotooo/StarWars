@@ -1,7 +1,7 @@
 {
   "name": "javascript-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is used as a boilerplate for tasks in the \"JavaScript\" course in Booost. It initializes a base application with a webpack dev server.",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
@@ -32,5 +32,14 @@
     "fetch": "^1.1.0"
   },
   "author": "Dopamine Ltd.",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radotooo/StarWars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radotooo/StarWars/issues"
+  },
+  "homepage": "https://github.com/radotooo/StarWars#readme",
+  "keywords": []
 }

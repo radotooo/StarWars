@@ -1,5 +1,6 @@
 import config from '../config';
 import EventEmitter from 'eventemitter3';
+import { getPlanets } from './utils.js';
 
 const EVENTS = {
   APP_READY: 'app_ready',
@@ -31,8 +32,11 @@ export default class Application extends EventEmitter {
    */
   async init() {
     // Initiate classes and wait for async operations here.
+    const data = await getPlanets();
+
+    this.data.planets = data;
+    this.data.count = data.length;
 
     this.emit(Application.events.APP_READY);
   }
 }
-
